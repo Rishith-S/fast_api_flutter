@@ -21,8 +21,8 @@ from type import GAN
 app = FastAPI()
 
 
-m1 = load_model('./map2sat.h5')
-m2 = load_model('./model_109600.h5')
+m1 = load_model('map2sat.h5')
+m2 = load_model('model_109600.h5')
 
 def load_image(filename, size=(256,256)):
     pixels = load_img(filename, target_size=size)
